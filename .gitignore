@@ -1,7 +1,6 @@
 .env
 *.pyc
 __pycache__/
-*.pbix
 data/raw/*
 target/
 logs/
