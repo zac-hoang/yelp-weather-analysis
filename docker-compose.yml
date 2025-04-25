@@ -1,0 +1,23 @@
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: local_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: zac
+      POSTGRES_PASSWORD: zac123
+      POSTGRES_DB: yelpdb
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - E:\dockervolumes\yelpxclimate:/var/lib/postgresql/data
+    networks:
+      - localnet
+
+volumes:
+  postgres_data:
+
+networks:
+  localnet:
+    driver: bridge

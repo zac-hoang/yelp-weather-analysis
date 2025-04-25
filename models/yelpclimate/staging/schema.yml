@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_yelp_review
+    description: "Cleaned yelp reviews"
+    columns:
+      - name: review_id
+        tests:
+          - unique
+          - not_null
+      - name: stars
+      - name: stars
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+  - name: stg_yelp_business
+    description: "Cleaned yelp business data"
+    columns:
+      - name: business_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_yelp_user
+    description: "Cleaned yelp user data"
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_precipitation
+    description: "Cleaned precipitation data"
+    columns:
+      - name: date
+        tests:
+          - unique
+          - not_null
+  - name: stg_temperature
+    description: "Cleaned temperature data"
+    columns:
+      - name: date
+        tests:
+          - unique
+          - not_null

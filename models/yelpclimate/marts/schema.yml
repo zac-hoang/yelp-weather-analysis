@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fact_review_weather
+    description: "Fact table to analyze weather and precipitation level on reviews restaurants get"
+    columns:
+      - name: review_id
+        tests:
+          - unique
+          - not_null

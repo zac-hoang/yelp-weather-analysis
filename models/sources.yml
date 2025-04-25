@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: raw
+    database: yelpdb
+    schema: raw
+    tables:
+      - name: all_yelp_business
+        description: "Raw YELP data of businesses"
+      - name: all_yelp_review
+        description: "Raw YELP data of reviews"
+      - name: all_yelp_user
+        description: "Raw YELP data of users"
+      - name: all_lv_precipitation
+        description: "Raw Las Vegas raw precipitation data"
+      - name: all_temperature
+        description: "Raw Las Vegas raw temperature data"

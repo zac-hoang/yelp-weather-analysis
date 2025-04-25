@@ -1,0 +1,11 @@
+yelpclimate_profile:
+  target: dev 
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: zac
+      password: zac123
+      dbname: yelpdb
+      schema: staging
+      port: 5433
